@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Django Project Homepage</title>
+    </head>
+<body>
+    <h1>Welcome to My Django Project!</h1>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'welcome' %}">Welcome (Rick Page)</a></li>
+            <li><a href="{% url 'list_users' %}">List Users</a></li>
+        </ul>
+    </nav>
+
+    <p>This is the main content of your homepage. You can add any information or calls to action here.</p>
+
+</body>
+</html>

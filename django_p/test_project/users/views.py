@@ -13,8 +13,7 @@ def welcome_view(request):
     message = "<h1>Welcome to the users app</h1>"
     return HttpResponse(message)
 def home(request):
-    message = "<h1>Home page go to home page</h1>"
-    return HttpResponse(message)
+    return render(request,"home_page.html")
 def rick(request, *args , **kwargs):
     return render(request,"base.html")
 
