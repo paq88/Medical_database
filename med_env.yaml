@@ -1,4 +1,4 @@
-name: medyczne_blabl
+name: medyczne
 channels:
   - defaults
 dependencies:
