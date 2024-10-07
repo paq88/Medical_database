@@ -63,7 +63,8 @@ class project(models.Model):
     description = models.CharField('Description of the project', max_length=45)
     start_date = models.DateField('Start')
     end_date = models.DateField('End')
-    id_project = models.ManyToManyField(employes)
+
+    teamleader_employee_id = models.ForeignKey(employes, on_delete=models.CASCADE, default=create_placeholder_employee)
 
 
     #admin_employee = models.ForeignKey(employes, on_delete=models.CASCADE, related_name='administered_projects', blank=True)
